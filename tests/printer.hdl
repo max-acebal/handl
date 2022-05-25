@@ -1,0 +1,6 @@
+int main(){
+print(1);
+printb(true);
+printf(1.34);
+prints("HANDL");
+}

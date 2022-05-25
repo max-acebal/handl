@@ -1,0 +1,15 @@
+int main() {
+	Phrase x;
+	Note n;
+	Song s;
+	s = Song();
+	n = Note("A3");
+	x = Phrase();
+	x.add(0, n);
+	x.add(6, n);
+	x.add(2, n);
+	s.measure(0, x);
+	s.measure(1, x);
+	s.play();
+	return 0;
+}

@@ -1,0 +1,58 @@
+int main(){
+    int x;
+    bool play_riff1;
+    Phrase riff1;
+    Phrase riff2;
+    Note e1;
+    Note g1;
+    Note a1;
+    Note bf1;
+    Note rest;
+    Song smoke_on_the_water;
+    smoke_on_the_water = Song();
+
+
+    e1 = Note("E1");
+    g1 = Note("G1");
+    a1 = Note("A1");
+    bf1 = Note("Bb1");
+    rest = Note("R");
+
+    riff1 = Phrase();
+    riff2 = Phrase();
+
+    riff1.add(0,e1);
+    riff1.add(1,g1);
+    riff1.add(2, a1);
+    riff1.add(3, rest);
+    riff1.add(4, e1);
+    riff1.add(5, g1);
+    riff1.add(6, bf1);
+    riff1.add(7, a1);
+
+    riff2.add(0,e1);
+    riff2.add(1,g1);
+    riff2.add(2, a1);
+    riff2.add(3, rest);
+    riff2.add(4,g1);
+    riff2.add(5,e1);
+    riff2.add(6, rest);
+    riff2.add(7, rest);
+
+    x=0;
+    play_riff1 = true; 
+    while(x<8){
+        if(play_riff1){
+            smoke_on_the_water.measure(x, riff1);
+            play_riff1 = false;
+        }
+        else{
+            smoke_on_the_water.measure(x, riff2);
+            play_riff1 = true;
+        }
+    x=x+1;
+    }
+
+    smoke_on_the_water.play();
+    return 0;
+}

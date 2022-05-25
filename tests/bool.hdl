@@ -1,0 +1,5 @@
+int main(){
+bool t;
+t=not false;
+printb(t);
+}

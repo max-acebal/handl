@@ -1,0 +1,38 @@
+int main(){
+    int x;
+    Phrase intro_riff;
+    Note cs2;
+    Note a3;
+    Note d2;
+    Note e2;
+    Note gs2;
+    Note rest;
+    Song in_my_life;
+    in_my_life = Song();
+    cs2 = Note("C#2");
+    a3 = Note("A3");
+    d2 = Note("D2");
+    e2 = Note("E3");
+    gs2 = Note("G#3");
+    rest = Note("R");
+
+    intro_riff = Phrase();
+
+    intro_riff.add(0,cs2);
+    intro_riff.add(1, a3);
+    intro_riff.add(2, cs2);
+    intro_riff.add(3, d2);
+    intro_riff.add(4, e2);
+    intro_riff.add(5, gs2);
+    intro_riff.add(6, rest);
+    intro_riff.add(7, rest);
+
+    x=0;
+    while(x<8){
+        in_my_life.measure(x, intro_riff);
+        x=x+1;
+    }
+
+    in_my_life.play();
+    return 0;
+}

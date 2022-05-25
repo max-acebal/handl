@@ -1,0 +1,26 @@
+int x;
+Array<String> x;
+Array<float> y;
+String pitch;
+float strength;
+
+int main(int x) {
+    x = 5;
+    
+    Note n = Note("A5", 0.25);
+    s = Song();
+    p = Phrase();
+    x = ["A4", "B3", "C4"];
+    y = [0.25, 0.3, 0.5];
+    
+    for (i = 0; i < 3; i = i+1) {
+        pitch = x[i];
+        strength = y[i];
+        Note b = Note(pitch, strength);
+    }
+
+    for (measure 1 through 8 in s) {
+        z = 5;
+    }
+
+}

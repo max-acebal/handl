@@ -1,0 +1,7 @@
+/*This should be ignored*/
+int main(){
+/*so should this*/
+prints("success");
+/*and this*/
+}
+/*and this*/

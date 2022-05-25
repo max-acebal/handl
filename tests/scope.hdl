@@ -1,0 +1,24 @@
+int main() {
+    int x;
+    int y;
+    int z;
+    int a;
+    x = 2;
+    y = 3;
+
+    z = x + y;
+
+    a = new_scope_func(x,y);
+    print(z);
+    print(a);
+
+    return 0;
+}
+
+int new_scope_func(int x, int y) {
+    int z;
+    x = x*2;
+    y = y*2;
+    z = x+y;
+    return z;
+}

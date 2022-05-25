@@ -1,0 +1,8 @@
+int main() {
+    int x;
+
+    x = 0;
+
+    int z; /* FAILS! variables must be declared at the beginning of a function */
+    z = 5;
+}
