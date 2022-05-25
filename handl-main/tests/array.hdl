@@ -1,0 +1,16 @@
+int main() {
+    /* Creates an array of multiples of 2 from 0 to less than 100 */
+    int size;
+    int i;
+    Array<int> arr;
+
+    size = 100/2;
+    arr = new Array<int>[size];
+    for (i = 0; i < 100; i = i + 2) {
+        arr[i/2] = i;
+    }
+    for (i = 0; i < size; i = i + 1) {
+        print(arr[i]);
+    }
+
+}

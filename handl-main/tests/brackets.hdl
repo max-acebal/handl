@@ -1,0 +1,14 @@
+int main(){
+{
+prints("first");
+{
+prints("second");
+{
+prints("third");
+{
+prints("fourth");
+}
+}
+}
+}
+}

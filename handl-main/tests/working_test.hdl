@@ -1,0 +1,30 @@
+int main() {
+	Phrase x;
+	Note n;
+	Note n1;
+	Note n2;
+	Song s;
+	s = Song();
+	n = Note("A1");
+	n1 = Note("A2");
+	n2 = Note("B1");
+	x = Phrase();
+	x.add(0, n); 
+	x.add(1, n1);
+	x.add(2, n2);
+	x.add(3, n);
+	x.add(4, n);
+	x.add(5, n);
+	x.add(6, n);
+	x.add(7, n1);
+	s.measure(0, x);
+	s.measure(1, x);
+	s.measure(2, x);
+	s.measure(3, x);
+	s.measure(4, x);
+	s.measure(5, x);
+	s.measure(6, x);
+	s.measure(7, x);
+	s.play();
+	return 0;
+}
